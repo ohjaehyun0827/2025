@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+        .blank{
+            padding: 25px 0px 100px 0px;
+            background-color: white;       
+            margin-bottom: 50px;
+        }
+        .blankx{
+            padding: 25px 0px 130px 0px;
+            background-color: white;
+        }
+        .wrap{
+            width: fit-content;
+            margin: 0 auto;
+        }
+        
+        .button1{
+            border-radius: 20px; 
+            padding: 10px 20px 10px 20px; 
+            margin: 10px;
+            text-align: center;
+            float:left;
+            cursor:pointer;
+        }
+        .button1.primary{
+            background-color: blue;
+            color: white;        
+        }
+        .button1.primary:hover{
+            background-color: darkblue;
+            color: white;
+        }
+        .button1.Secondary{
+            background-color: gray;
+            color: white;
+        }
+        .button1.Secondary:hover{
+            background-color: darkgray;
+            color: white;
+        }
+        .button1.Success{
+            background-color: green;
+            color: white;
+        }
+        .button1.Success:hover{
+            background-color: darkgreen;
+            color: white;
+        }
+        .button1.Danger{
+            background-color: red;
+            color: white;
+        }
+        .button1.Danger:hover{
+            background-color: darkred;
+            color: white;
+        }
+        .button1.Warning{
+            background-color: orange;
+            color: black;
+        }
+        .button1.Warning:hover{
+            background-color: darkorange;
+            color: black;
+        }
+        .button1.Info{
+            background-color: lightblue;
+            color: black;
+        }
+        .button1.Info:hover{
+            background-color: deepskyblue;
+            color: black;
+        }
+        .button1.Light{
+            background-color: lightgray;
+            color: black;
+        }
+        .button1.Light:hover{
+            background-color: silver;
+            color: black;
+        }
+        .button1.Dark{
+            background-color: black;
+            color: white;
+        }
+        .button1.Dark:hover{
+            background-color: dimgray;
+            color: white;
+        }
+        .button1.Link{
+            background-color: white;
+            color: blue;
+            text-decoration-line: underline;
+        }
+        .button2{
+            border-radius: 10px; 
+            padding: 10px 20px 10px 20px; 
+            margin: 10px auto;
+            width: 500px;
+            text-align: center;
+            cursor: pointer
+        }
+        .button2.Secondary{
+            background-color: white;
+            color: gray;
+            border: 1px solid black;    
+        }
+        .button2.Secondary:hover{
+            background-color: lightgray;
+            color: gray;
+            border: 1px solid black;    
+        }
+        .button2.Primary{
+            background-color: blue;
+            color: white;    
+            border: 1px solid blue;    
+        }
+        .button3{
+            border-radius: 10px; 
+            padding: 10px 20px 10px 20px; 
+            margin: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .button3.Primary{
+            background-color: blue;
+            color: white;
+            border: 1px solid blue;
+            float:left;
+   
+        }
+        .button3.Secondary{
+            background-color: white;
+            color: gray;
+            border : 1px solid black;
+            float:right;
+        }
+        .button3.Secondary:hover{
+            background-color: lightgray;
+            color: gray;
+            border : 1px solid black;
+        }
+        .buttonloading{
+            background-color: blue;
+            color: white;
+            padding: 12px 24px;
+
+        }
+        .button4{
+            border-radius: 10px; 
+            padding: 10px 20px 10px 20px; 
+            margin: 5px;
+            background-color: rgb(71, 133, 221);
+            color: white;
+            float:left;
+        }
+        .button5{
+            border-radius: 50%; 
+            margin: 5px;
+            font-size:15px;
+            float:left;
+            cursor:pointer;
+        }
+        .button5.a{
+            background-color: blue;
+            font-size:15px;
+            width: 30px;
+            height: 30px;
+            color: white;
+            text-align: center;
+            border : 1px solid blue;
+            line-height: 30px;
+        }
+        .button5.b{
+            background-color: white;
+            font-size:15px;
+            width: 30px;
+            height: 30px;
+            color: blue;
+            text-align: center;
+            border : 1px solid blue;
+            line-height: 30px;
+        }
+        .button5.c{
+            background-color: blue;
+            font-size:30px;
+            width: 50px;
+            height: 50px;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            border: 1px solid blue;
+        }
+        .button5.d{
+            background-color: white;
+            font-size:30px;
+            width: 50px;
+            height: 50px;
+            color: blue;
+            text-align: center;
+            line-height: 50px;
+            border: 1px solid blue;
+        }
+    
+        .button5.b:hover{
+            background-color: blue;
+            color: white;
+            border : 1px solid blue;
+        }
+        .button5.d:hover{
+            background-color: blue;
+            color: white;
+            border : 1px solid blue;
+        }
+    </style>
+    <body style="background-color: silver;margin: 0px;">
+        <!-- 첫번째 -->
+        <div class="blank">
+            <div class="wrap">
+                <div class="button1 primary">Primary</div>
+                <div class="button1 Secondary">Secondary</div>
+                <div class="button1 Success">Success</div>
+                <div class="button1 Danger">Danger</div>
+                <div class="button1 Warning">Warning</div>
+                <div class="button1 Info">Info</div>
+                <div class="button1 Light">Light</div>
+                <div class="button1 Dark">Dark</div>
+                <div class="button1 Link">Link</div>
+            </div>
+        </div>
+        <!--2번째 -->
+        <div class="blank">
+            <div class="button2 Secondary">Secondary action </div>
+            <div class="button2 Primary action">Primary action </div>
+        </div>
+        <!-- 3번째 -->
+        <div class="blank">
+            <div class="wrap">
+                <div class="button3 Primary">Primary icon &rarr; </div>
+                <div class="button3 Secondary">Secondary icon &rarr; </div>
+            </div>
+        </div>
+        <!-- 4번째 로딩 버튼-->
+        <div class="blank">
+            <div class="wrap">
+                <div class="button4">
+                    <i class="fa fa-circle-o-notch fa-spin"></i>
+                </div>
+
+                <div class="button4">
+                    <i class="fa fa-circle-o-notch fa-spin"></i>
+                    &nbsp; Loading...
+                </div>
+            </div>
+        </div>
+        <!-- 5번째 -->
+        <div class="blankx">
+            <div class="wrap">
+                <div class="button5 a"> &times;</div>
+                <div class="button5 b"> &times;</div>
+            </div>
+            <div class="wrap">
+                <div class="button5 c"> &times;</div>
+                <div class="button5 d"> &times;</div>
+            </div>
+        </div>
+    </body>
+</html>
