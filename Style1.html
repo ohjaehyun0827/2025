@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <style>
+        .div_navleft{
+            border-radius: 3px; 
+            width:160px;
+            padding: 5px 0; 
+            border: 1px solid #3d3d3d;
+            margin-top: 5px;
+        }
+        .div_navleft.active{
+            background-color: green;
+            font-weight: 600px;
+            color: white;
+        }
+        .div_navleft.normal{
+            background-color: gainsboro;
+        }
+        .div_navleft.normal:hover{
+            background-color: white;
+        }
+    </style>
+    <body>
+        <div style="margin: 20px;">
+        <!-- 첫번째 단락 -->
+        <div style="border-radius: 3px;background-color: green;padding: 8px; color: white;">
+            <div style="font-size:x-large;font-weight: bold;">Welcome to 오재현's Homepage(22300455)</div>
+            <!--
+            <h2>Welcome to My Homepage<h2>
+            -->
+            Use the menu to select different Style
+        </div>
+
+        <!-- 두번째 단락-->
+        <div style="margin-top: 5px;">
+            <!-- 왼쪽 1-->
+            <div style="float:left">
+                <div class="div_navleft active">Stylesheet1</div>
+                <div class="div_navleft normal">Stylesheet2</div>
+                <div class="div_navleft normal">Stylesheet3</div>
+                <div class="div_navleft normal">Stylesheet4</div>
+                <div class="div_navleft normal">NoStylesheet</div>
+
+            </div>
+            <!-- 왼쪽 2 -->
+            <div style="float:left;height:45vh; width: 65vw;padding: 13px">
+                <h2>Same Page Different Stylesheets</h2>
+                This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br/>
+                Stylesheet1, Stylesheet2, Stylesheet3, Stylesheet4.
+                <h2>No Styles</h2>
+                This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br/>
+                No Stylesheet.
+            </div>
+            <!-- 오른쪽 -->
+            <div style="border-radius: 10px;margin: 5px; padding:5px;float:right;height:45vh;width: 12vw;background-color: aquamarine;color: white;">
+                <h4>Side-Bar</h4>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            </div>
+        </div> 
+        <!-- 아래쪽-->
+        <div style="border-radius: 3px;float:inline-end;padding: 12px;text-align: center; background-color: gainsboro;font-size: 70%;line-height: 15px;height: 8vh;">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        </div>
+        </div>
+    </body>
+</html>
