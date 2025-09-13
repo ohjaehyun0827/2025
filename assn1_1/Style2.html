@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <style>
+        .divstyle2{
+            height: 30vh;
+            margin-top: 30px;
+            padding: 10px 10px;
+            background-color: white;
+            font-size: small;
+            line-height: 20px;
+            text-decoration-line: none;
+        }
+        .box3style{
+            margin:0 0 0 0;
+            padding: 5px 10px 20px 10px;
+            background-color: rgb(244, 200, 208);
+            color: red; 
+            }
+        .divleft{
+            border-radius: 20px; 
+            width: 160px;
+            padding: 5px 0; 
+            border: 1px solid red;
+            margin-top: 5px;
+            text-align: center;
+            display:block;
+            text-decoration-line: none;
+            }
+        .divleft.active{
+            background: white;
+            color : red;
+        }
+        .divleft.normal{
+            background-color: red;
+            color: white;
+        }
+        .divleft.normal:hover{
+            background-color: white;
+            color: red;
+        }
+    </style>
+    <body style="background-color: red;">
+        <!-- 첫박스-->
+        <div style="margin-top:20px;padding: 0px 0px 0px 10px;color: white;border: 10px;font-size: 28px;line-height: 23px;">
+        <h1>Welcome to 오재현's Homepage (22300455)</h1>
+        Use the menu to select different Stylesheets
+        </div>
+        <!-- 2 box-->
+        <div class="divstyle2">
+            <div style="float:left;width: 75vw;">
+                <h1 style="color:red;">Same Page Different Stylesheets</h1>
+                This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br/>
+                <a href="./Style1.html" style="text-decoration-line: none; color: red">Stylesheet1,</a>
+                <a href="./Style2.html" style="text-decoration-line: none; color: red">Stylesheet2,</a>
+                Stylesheet3, Stylesheet4.<br/>
+                <h2 style="color:red">No styles</h2>
+                This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br/>
+                <a href="./index.html" style="color:re  d">No stylesheet</a>
+            </div>
+            
+            <div style="float:right;width:10vw;">
+                <a href="./Style1.html" class="divleft normal">Stylesheet1</a>
+                <a href="./Style2.html" class="divleft active">Stylesheet2</a>
+                <div class="divleft normal">Stylesheet3</div>
+                <div class="divleft normal">Stylesheet4</div>
+                <a href="./index.html" class="divleft normal">NoStylesheet</a>
+            </div>
+
+        </div>
+        <!-- 3 box -->
+        <div class="box3style">
+                <h3>Side-Bar</h3>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        </div>
+        <div style="color: white;text-align: center;font-size: 10px;">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        </div>
+    </body>
+</html>
