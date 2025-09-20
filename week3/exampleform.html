@@ -1,0 +1,168 @@
+<html>
+    <head>
+        <style>
+            form span{
+                color: red;
+            }
+            input[type=text]{
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+            }
+            input[name=input1]{
+                border: 1px solid red;
+                border-radius: 10px;
+            }
+            input[name=input1]:focus{
+                background-color: pink;
+            }
+            input[name=input2]{
+                border:none;
+                border-bottom:4px solid blue;
+                background-color: skyblue;
+            }
+            input[name=input3]{    
+                width: 200px;
+                transition: widt0.4s ease-in-out;
+            }
+            input[name=input3]:focus{
+                width: 100%;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h2>HTML Forms</h2>
+        <p>사용자 정보 입력</p>
+        <!-- form 태그 실습-->
+        <form method="post" action="form_ok.html">
+            <!-- method는 데이터를 전송할때 GET,  POST, PUT, DELETE등등
+             action은 데이터를 전송할때 url을 표기!-->
+            <label for="input_name">이름:</label><br/>
+            <input type="text" id="input_name" name="name" placeholder="내용을 입력해주세요"/><br/>
+            <!--
+            label은 인풋 태그 이름을 표기하는 공간
+            placeholder를 적어주면, 아무것도 입력하지 않을때 인풋 내 표기가 된다
+            input의 name 어트리뷰트는 폼으로 전송할때 key값으로 전송된다.-->
+            <label for="input_email">이메일:</label><br/>
+            <input type="text" id="input_email" name="email" value="@gmail.com"/><br/>
+
+            <fieldset>
+                <legend>필드셋의 라벨 같은 기능!</legend>
+                전화번호: <input type="text" id ="input_phone" name="phone"/><br/>
+                주소: <input type="text" id = "input_address" name="address"/><br/>
+            </fieldset>
+            <br/>
+            <!-- 인풋 태그 타입의 여러가지 종류!-->
+            <div>
+                <label for="input_type_text">TYPE:text</label>
+                <input type="text" name="input_text" id="input_type_text"><br/>
+            </div>
+
+            <div>
+                <label for="input_type_passsword">TYPE:password</label>
+                <input type="password" name="input_password" id="input_type_password"><br/>
+            </div>
+            <div>
+                <label for="input_type_number">TYPE:number</label>
+                <input type="number" name="input_number" id="input_type_number"><br/>
+            </div>
+            <div> 
+                <label for="input_type_date">TYPE:date</label>
+                <input type="date" name="input_date" id="input_type_date"><br/>
+            </div>
+            <div>
+                <label for=""input_type_time>TYPE:time</label>
+                <input type="time" name="input_time" id="input_type_time"><br/>
+            </div>
+            <div>
+                <label for="input_type_hidden">TYPE:hidden</label>
+                <input type="hidden" name="input_hidden" id="input_type_hidden"><br/>
+            </div>
+
+            <!-- name이 같은 radio끼리는 중복 할 수 없다-->
+
+            <div>
+                <label for="input_type_radio_1">TYPE:radio 1</label>
+                <input type="radio" name="input_radio" id="input_type_radio_1" value="1"><br/>
+            </div>
+              <div>
+                <label for="input_type_radio_2">TYPE:radio 2</label>
+                <input type="radio" name="input_radio" id="input_type_radio_2"><br/>
+            </div>
+              <div>
+                <label for="input_type_radio_3">TYPE:radio 3</label>
+                <input type="radio" name="input_radio" id="input_type_radio_3"><br/>
+            </div>
+
+            <div>
+                <label for="input_type_checkbox_1">TYPE:checkbox1</label>
+                <input type="checkbox" name="input_checkbox" id="input_type_checkbox_1"><br/>
+            </div>
+            <div>
+                <label for="input_type_checkbox_2">TYPE:checkbox2</label>
+                <input type="checkbox" name="input_checkbox" id="input_type_checkbox_2"><br/>
+            </div>
+
+            <div>
+                <label for="input_type_file">TYPE:file</label>
+                <input type="file" name="input_file" id="input_type_file"><br/>
+            </div>
+            <div>
+                <label for="select_gender">TYPE:gender</label>
+                    
+                <select name="gender" id="select_gender">
+                    <option value="M">남자</option>
+                    <option value="W">여자</option>
+                    <option value="X" selected>선택안함</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="input_type_list" >TYPE:list</label>
+                <input type="text" list="list_fruit" name="input_list" id="input_type_list">
+                <datalist id="list_fruit">
+                    <option value="apple">사과</option>
+                    <option value="banana">바나나</option>
+                    <option value="cherry">체리</option>
+                    <option value="grape">포도</option>
+                </datalist>
+            </div>
+            <br/>
+            <div>
+                <label for="input_type_textarea">TYPE:textarea</label><br/>
+                <textarea type="text" name ="input_textarea">ㅁㄴㅇ</textarea>
+            </div>
+            <div>
+                <label for="input_type_color">TYPE:color</label>
+                <input type="color" name="input_color" id="input_type_color"><br/>
+            </div>
+
+            <input type="submit" value="저장"/>
+            <input type="reset" value="취소">
+
+        </form>
+        <br/>
+
+
+        <form action="save_op.php">
+            <label for="fname"><span>*</span>이름:</label>
+            <input type="text" id="uname" name="uname" required/><br/>
+            <label for="pwd"><span>*</span>비밀번호:</label>
+            <input type="password" id="pwd" name="pwd" placeholder="4글자 이상 입력" required><br/>
+            <label for="mobile">핸드폰번호:</label>
+            <input type="text" id="mobile" name="mobile" placeholder="00*-000*-0000" pattern="[0-9]{2,3}[0-9]{3,4}[0-9]{3,4}" maxlength="13"/><br/>
+            <label for="gender">성별:</label>
+            <input type="radio" id="gender_1" name="gender" value="M" checked>남
+            <input type="radio" id="gender_2" name="gender" value="W" >여 <br/>
+            <label for="hobby">취미:</label>
+            <input type="checkbox" id="hobby_1" name="hobby1" value="1" checked> 영화감상
+            <input type="checkbox" id="hobby_2" name="hobby2" value="2" checked> 독서
+            <input type="checkbox" id="hobby_3" name="hobby3" value="3" checked> 스포츠 <br/> 
+            <br/>
+            <input type="submit" value="저장"/>
+            <input type="reset" value="새로 입력">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .title{
+                color: greenyellow;
+            }
+            input[name="ip1"]{
+                border:none;
+                margin:0;
+                padding: 0;
+            }
+            .blank{
+                height: 40px;
+                padding: 5px;   
+                border-radius: 5px;
+                border: 1px solid silver;
+                margin-bottom: 10px;
+            }
+            .blank2{
+                border-radius: 5px;
+                margin-bottom: 8px;
+                padding:5px 0px 5px 0px;
+            }
+            .sub{
+                border-radius: 5px;
+                font-size: large;
+                margin-top:150px;
+                height: 50px;
+                text-align: center;
+                background-color: green;
+                color: white;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body style="margin: 8px 30% 8px 30%">
+        
+        <H2 class="title">NAVER</H2>
+        <form method="post" action="#" style="width:40vw">
+        <!-- 첫칸-->
+        <fieldset class="blank2">
+            <input type="text" id="id" name="ip1" placeholder="아이디"/>
+            <hr color = "silver">	
+            <input type="password"id="password" name="ip1" placeholder="비밀번호"/>
+            <hr color = "silver">	
+            <input type="textarea" id="email" name="ip1" placeholder="[선택] 이메일 주소 (비밀번호 찾기 등 본인 확인용)"/><br/>
+        </fieldset>
+        <!-- 두번째 칸-->
+        <fieldset class="blank2">
+            <input type="text" name="ip1" placeholder="이름"/><br/>
+            <hr color = "silver">	
+
+            <input type="date" name="ip1" placeholder="생년월일 8자리"/><br/>
+            <hr color = "silver">	
+
+            <label for="input_type_list">통신사 선택</label>
+            <select name="input_list" id="input_type_list">
+                <option value="SKT">SKT</option>
+                <option value="KT">KT</option>
+                <option value="LG U+">LG U+</option>
+                <option value="SKT 알뜰폰">SKT 알뜰폰</option>
+                <option value="KT 알뜰폰">KT 알뜰폰</option>
+                <option value="LG U+ 알뜰폰">LG U+ 알뜰폰</option>
+            </select>
+            <hr color = "silver">	
+            <span class="blank">
+                <input type="radio" id ="gender_m" name="gender" value="M">남자
+                <input type="radio" id ="gender_w" name="gender" value="W">여자
+            </span>
+            <span class="blank">
+                <input type="radio" id ="kor" name="nationality" value="KOR">내국인
+                <input type="radio" id ="for" name="nationality" value="FOR">외국인 <br/>
+            </span>
+        </fieldset>
+        <div class="blank">
+            <input type="text" id="phone" name="ip1" placeholder="휴대전화번호" pattern="[0-9]{2,3}[0-9]{3,4}[0-9]{3,4}"/><br/>
+        </div>
+        <div class="blank">
+            <input type="checkbox" id="agree" name="agree" value="1">[필수]인증 약관 전체동의<br/>
+        </div>
+
+        <input type="submit" value ="인증요청" class="sub">
+         
+    </form>
+    </body>
+</html>

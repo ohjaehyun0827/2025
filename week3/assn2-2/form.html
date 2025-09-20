@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+    <h2>Dynamic Web page</h2>
+        <form name = "form1" method="post">
+            <input type="text" id="list" name="list">
+            <button onclick="add()" type="button" style="background-color: blue; color: white"> add </button>
+            <button onclick="del()" type="button" style="background-color: green;color:white"> del </button>
+            <br/>
+            <ul id="arr"></ul>
+        </form>
+    </body>
+    <script>
+        let arr=[];
+        function add(){
+            var list = document.getElementById("list");
+            arr.push(list.value);
+            var ul = document.getElementById("arr");
+            let li = document.createElement("li");
+            li.textContent = arr[arr.length-1];
+            ul.appendChild(li);
+  
+        }
+        function del(){
+            for(let i =0; i < arr.length; i++){
+                arr.pop();
+            }
+            var ul = document.getElementById("arr");
+            ul.innerHTML = "";
+            
+        }
+    </script>
+</html>
