@@ -1,0 +1,31 @@
+body{
+    margin-top: 50px;
+    }
+table td, table th {
+    font-size: 20px;
+}
+.titlesize{
+    font-size: 40px;
+}
+a{
+    text-decoration-line: none;
+}
+/*모바일 버전*/
+@media only screen and (max-width: 550px){
+    body{
+        margin-top:30px;
+    }
+    table td, table th{
+        font-size: 12px;
+    }
+    .titlesize{
+        font-size: 30px;
+        text-align: center;
+    }
+    button {
+        width: 100%;      /* 모바일에서는 더 넓게 */    /* 모바일 높이 */
+        font-size: 18px;   /* 글자도 조금 더 크게 */
+        margin-bottom: 10px;
+    }
+}
+
