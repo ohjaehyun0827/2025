@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <form name="addform" onsubmit="return validateForm()">
+                <div class="mb-3">
+                <label class="form-label">품명</label>
+                <input type="text" id="name" class="form-control">
+                 </div>
+                <div class="mb-3">
+                    <label class="form-label">수량</label>
+                    <input type="number" id="qt" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">가격</label>
+                    <input type="number" id="pc" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">상태</label>
+                    <input type="text" id="sta" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">입고처</label>
+                    <input type="text" id="inP" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">출고처</label>
+                    <input type="text" id="outP" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">추가하기</button>
+                <button type="button" class="btn btn-secondary" onclick="location.href='index.html'">취소</button>
+            </form>
+        </div>
+        <script>
+            function validateForm(){
+                var name = document.addform.name;
+                if (name.value ==""){
+                    alert("품명을 입력하세요");
+                    return false;
+                }
+                var qt = document.addform.qt;
+                if (qt.value ==""){
+                    alert("수량을 입력하세요");
+                    return false;
+                }
+                var pc = document.addform.qt;
+                if (pc.value ==""){
+                    alert("가격을 입력하세요");
+                    return false;
+                }
+                var sta = document.addform.sta;
+                if (sta.value ==""){
+                    alert("상태를 입력해주세요");
+                    return false;
+                }
+                btnalert();
+            }
+            function btnalert(){
+                event.preventDefault()
+                alert('게시물이 추가됩니다.')
+                window.location.href = "index.html";
+            }
+        </script>
+    </body>
+</html>
